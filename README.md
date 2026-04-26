@@ -3,7 +3,7 @@
 This project applies __time series analysis__ to forecast the Los Angeles Lakers’ rolling net rating for the final stretch (7 games) of the 2025–2026 NBA season. Using ARIMA modeling, rolling‑origin cross‑validation, and game‑level advanced metrics, the analysis estimates short‑term performance and provides insight into likely win–loss outcomes and playoff seeding.
 
 
-**The goal of this project is to:**
+### **The goal of this project is to:**
 
 - Compute offensive rating (ORtg), defensive rating (DRtg), and net rating (NRtg) from raw game logs (This was done in Excel)
 
@@ -28,7 +28,7 @@ Team Page → Game Log → Export as Excel
 
 Each sheet in the Excel file corresponds to one NBA team. This project focuses on the Los Angeles Lakers (LAL) sheet.
 
-**Methodology**
+### **Methodology**
 1. Feature Engineering
 Using Dean Oliver’s formulas (Basketball on Paper, 2004):
 
@@ -89,7 +89,7 @@ The forecast exhibits:
 
 - Wide intervals reflecting uncertainty in NBA outcomes
 
-**Results Summary**
+### **Results Summary**
 - The ARIMA(1,1,0) model captures the main structure of the rolling net rating series.
 
 - Forecasted net ratings for the next 7 games remain near zero with wide uncertainty bands.
@@ -98,7 +98,7 @@ The forecast exhibits:
 
 - The projected final record is 52–30, placing the Lakers 4th in the Western Conference.
 
-**Limitations**
+### **Limitations**
 Time series models assume the future resembles the past; a challenge in sports analytics due to:
 
 - Injuries
@@ -113,7 +113,7 @@ Time series models assume the future resembles the past; a challenge in sports a
 
 These factors are _<u>not</u> explicitly modeled in ARIMA._
 
-**Extensions**
+### **Extensions**
 Future improvements could include:
 
 - ARIMAX / SARIMA with covariates (home/away, injuries, opponent strength, and data from previous years)
